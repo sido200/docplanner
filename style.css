@@ -1,0 +1,521 @@
+@font-face {
+	font-family: 'roboto';
+	src: url(assets/fonts/Roboto-Regular.ttf) 
+}
+@font-face {
+	font-family: 'work sans';
+	src: url(assets/fonts/WorkSans-Light.ttf) 
+}
+body{
+    margin: 0%;
+}
+::selection {
+    color:white;
+    background:#00bfa5;
+  }
+/*nav-css*/
+.logo img {
+    width: 268px;
+    height: 32px;
+    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-left: 2px;
+}
+.item{
+    padding-bottom: 4px;
+}
+
+
+nav {
+    width: calc(100vw - 560.5px);
+    height:70px ;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    opacity: 98%;
+    background-color: white;
+    padding-top: 1.5px;
+    padding: 0 270px;
+    z-index: 2;
+}
+
+
+
+
+.item li {
+    display: inline;
+}
+.item  a {
+    color: #ababab;
+    text-decoration: none;
+    padding: 0 0.6em;
+    font-family: "roboto";
+    font-size: 15px;
+    font-weight: 400;
+}
+#about a {
+    color: #00bfa5;
+}
+
+.item a:hover {
+    color: #00bfa5;
+}
+
+.item>ul {
+    padding-bottom: 15px;
+    
+}
+
+
+/*department select*/
+nav ul>li{
+    float: left;
+    position: relative;
+    padding-left: 4px;
+}
+nav ul ul{
+    position:absolute;
+    padding: 0%;
+    width: 250px;
+    display: none;
+    top: 100%; 
+    background-color: white;
+    box-shadow:0px 8PX 16px 0px rgba(0,0,0,0.2);
+}
+nav ul li:hover >ul {
+    display: block;
+}
+.dropbox a{
+    display: block;
+    width: 235px; 
+    margin-left: -4px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.dropbox a:hover{
+    background-color:#f6f8f8;
+}
+
+/* CSS HOME*/
+.home{
+    padding: 100px;
+    text-align: center;
+    padding-top: 103px;
+    padding-bottom: 0%;
+
+}
+.p{
+    display: inline-block;
+   height:auto;
+   max-width: 13cm;
+   font-family:'roboto',Arial,sans-serif;
+   color: #74748a;
+   font-weight: 400;
+   line-height: 1.75;
+   text-align: left;
+   margin-bottom: 62px;
+   margin-top: 15px;
+   padding-left:23PX;
+   padding-right: 1px;
+
+
+}
+.P-container{
+    padding-right: 24px;
+}
+.home h1{
+    font-family: 'work sans',arial ,sans-serif;
+    font-weight: 300;
+    font-size: 2.125rem;
+    letter-spacing:-.3px ;
+    color: #00bfa5;
+    padding-top:3PX ;
+}
+
+/*css service*/
+.service{
+display: flex;
+width: 1015px;
+height: 365px;
+margin-left: 262px;
+margin-top:5.5px ;
+
+}
+.patients,.doctors,.clinics{
+    height: 345px; ;
+    width:311px ;
+    border-radius: 3%; 
+    margin: 10px;
+    color: white;
+    text-align: start;
+
+}
+.service h1{
+    font-size:25px ;
+    line-height: 25px;
+    font-family: 'work sans',arial,sans-serif;
+    height: 18px;
+   margin-top: 5px;
+   letter-spacing:1px ;
+
+}
+.service h2{
+    line-height:28.8px;
+    font-family: 'work sans',arial ,sans-serif;
+    font-weight: 300;
+    letter-spacing:-0.3px ;
+    
+}
+.patients{
+    background-color: #00ccb1;
+}
+.doctors{
+    background-color: #3d83df;
+}
+.clinics{
+    background-color:#1b2734;
+}
+.text{
+    height:158px ;
+    width:247px ;
+    margin-left:32px;
+    
+ 
+    
+}
+.service img{
+    height: 24px;
+    width: 24px;
+    margin-left:32px;
+    margin-top: 32px;
+   
+
+}
+.patients:hover,.doctors:hover,.clinics:hover{
+    opacity: 89%;
+}
+/*select*/
+.select  {
+width:auto ;
+margin-left:28px;
+border: none;
+margin-top: 55px;
+line-height: 24.96px;
+background-color:transparent;
+font-size: 19.2px;
+text-transform: none;
+text-decoration: underline;
+cursor: pointer;
+}
+.select2{
+    width:auto ;
+    margin-left:28px;
+    border: none;
+    margin-top: 5px;
+    line-height: 24.96px;
+    background-color:transparent;
+    font-size: 19.2px;
+    text-transform: none;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.select-container{
+    margin-top: 20px;
+
+}
+select{
+    color: white;
+}
+option{
+    color: black;
+    font-size:15PX ;
+    
+}
+select:focus {
+   outline: none;
+  }
+  /*css company*/
+  .company ul{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 55%;
+    list-style: none;
+    margin-left: 50px;
+    align-items: center;
+    
+  
+  
+    
+
+  }
+ .company h1{
+    font-size: 26px;
+    font-family: 'work sans',arial ,sans-serif;
+    color: #00bfa5;
+    font-weight: 300;
+    width: 20%;
+    line-height: 33.8px;
+ }
+ .company{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  margin-left: 270px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  
+
+   
+ }
+ .company li{
+  padding-right: 30px;
+  padding-bottom: 15px;
+ }
+ .logo-color{
+ 
+  filter: grayscale(200%) contrast(2%)  ;
+
+ }
+ .company svg:hover,.company img:hover{
+    filter: none;
+    fill: #00bfa5;
+ }
+ /*STATS*/
+ .stats{
+    background-color: #e5faf8;
+    width: 100%;
+    height: 600px;
+    
+    
+ }
+ .all{
+    display: flex;
+    justify-content: center;
+   
+ }
+ .header{
+    margin-top: 84px;
+    margin-right: 56PX;
+    
+ }
+ .header h1{
+    font-family: 'work sans',arial ,sans-serif;
+    font-weight: 300;
+    font-size: 34px;
+    letter-spacing:-0.3px ;
+    color: #00bfa5;
+    line-height: 44.2px;
+    text-align: start;
+    margin: 0%;
+   
+    
+  
+
+ }
+ .header p{
+    font-family:'roboto',Arial,sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: start;
+    color: #747474;
+    margin-top: 22px;
+    
+ }
+ .header img{
+    height: 320PX;
+    width: 460PX;
+    margin-top: 23px;
+    margin-left: -170px;
+ }
+ .boxs{
+    display:flex;
+   
+ }
+ .box{
+    height:250PX ;
+    width:228PX ;
+    background-color: white;
+    border-radius: 2%;
+    text-align: center;
+    font-family: 'work sans',arial ,sans-serif;
+    margin: 20px;
+    margin-left: 0;
+ }
+ 
+ .box-logo1{
+    height:40px ;
+    width:35px ;
+    padding: 11px 82px 0 82px;
+ }
+ .box-logo2,.box-logo4{
+    height:40px ;
+    width:40px ;
+   
+ }
+ .box-logo3{
+    height:32px ;
+    width:40px ;
+ }
+ .in1{
+   padding-top: 24px;
+ }
+ .in2{
+    padding: 56px 30px 0 30px;
+ }
+ .boxs h3{
+    font-size: 24px;
+    color: #00bfa5;
+ }
+ .boxs p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #747474;
+ }
+ .colonne1{
+    margin-top: 30px;
+ }
+ 
+ 
+  
+ /*CSS CITES*/
+ .header2{
+    text-align: center;
+    margin-top: 88px;
+    margin-bottom: 70px;
+ }
+ .header2 h1{
+    font-family: 'work sans',arial ,sans-serif;
+   color: #00bfa5;
+   font-weight: 400;
+   font-size:30PX ;
+   letter-spacing:-0.3px;
+   line-height: 39px;
+
+ }
+ .header2 p{
+    font-family:'roboto',Arial,sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #747474;
+
+ }
+ .grid-contents{
+    display: grid;
+    grid-template-columns: repeat(3,331PX) ;
+    grid-template-rows: 370px 370px 370px ;
+    justify-content: center;
+   
+    
+ }
+ .grid{
+    border-radius: 2%;
+    height:350px ;
+    width:311px ;
+    border: 1px solid rgba(0,0,0,.03);
+    
+ }
+ .button{
+    color: gray;
+    font-size: large;
+    font-family:'roboto',Arial,sans-serif;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  padding: 20px;
+   
+ }
+ .grid img{
+    width:311PX ;
+    height:280PX ;
+    border-radius: 2% 2% 0 0;
+
+ }
+ .grid:hover{
+    box-shadow:0px 5PX 10px 0px rgba(0,0,0,0.2);
+   
+ }
+ .grid button{
+    background-color: #3d83df;
+    border: none;
+    height: 30px;
+    width:103px ;
+    border-radius: 4px;
+    color: white;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 0.4px;
+  font-weight: 600; 
+  cursor: pointer;
+  padding: 0%;
+ }
+ .grid button:hover{
+  background-color: #1662c6;
+ }
+ /* CSS JOIN US*/
+ .join-us h1{
+    font-family:'work sans',arial ,sans-serif;
+    color: #333333;
+    font-weight: 400;
+    font-size:30PX ;
+    letter-spacing:-0.3px;
+    line-height: 39px;
+   
+
+ }
+ .join-us{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom:80px ;
+ }
+ .join-us button{
+    font-family:'roboto',Arial,sans-serif;
+    background-color: #3d83df;
+    border: none;
+    height: 40px;
+    width:210px ;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.48px;
+  font-weight: 600; 
+  cursor: pointer;
+  padding: 14px 18px 14px 18px;
+ }
+ .join-us button:hover{
+    background-color: #1662c6;}
+
+    /* CSS FOOTER*/
+    footer{
+        border-top: 1px solid #eef2f2;
+        font-family:'roboto',Arial,sans-serif;
+        color:#ababab ;
+        font-size: 12px;
+        text-align: center;
+        line-height: 15.6px;
+    }
+    footer a{
+        text-decoration: none;
+        color:  #3d83df;
+    }
+    footer a:hover{
+        text-decoration:underline  #3d83df ;}
+        
+    
+
+ 
+
+ 
+ 
+
+ 
+  
+  
+ 
+
+
+
+
